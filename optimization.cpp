@@ -246,7 +246,7 @@ state find_nearest(point p, point dir) {
     /// turn overwise
     {
       state new_state = u.second;
-      new_state.turn_clockwise();
+      new_state.turn_overwise();
       relax(new_state, u.second, u.first + B);
     }
   }
